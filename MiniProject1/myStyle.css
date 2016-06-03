@@ -1,0 +1,17 @@
+#header {
+    -webkit-animation-duration: 4s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.site__title {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg, #f30019, #fe9900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mega {
+    font-size: 6rem;
+    line-height: 1;
+}

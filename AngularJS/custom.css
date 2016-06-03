@@ -1,0 +1,5 @@
+/*stylesheet to override popular css libraries (bootstrap) properties
+  industry standards*/
+.alert-danger{
+    background-color: yellow;
+}

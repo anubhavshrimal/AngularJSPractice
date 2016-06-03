@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="custom.css"/>
+    <!-- stylesheets should be loaded before scripts good practice-->
+    <script src="angular.js"></script>
+    <script src="demo.js"></script>
+    <title>Angular JS</title>
+</head>
+<body ng-app>
+<div>Hello World</div>
+<div id="blue">blue div</div>
+<div class="red">red div</div>
+<div class="row">
+    <input class="col col-xs-12 col-sm-6" type="text">
+    <input class="col col-xs-12 col-sm-6" type="text">
+</div>
+
+Input: <input id="input1" class="col" type="text" ng-model="name">
+
+<div class="btn btn-danger" ng-click="dis=!dis">Show/Hide</div>
+<div class="alert alert-danger" ng-show="name">{{name}}</div>  <!--anuglar variable "name" accessed here-->
+<div class="alert alert-danger" ng-show="dis">Hidden div</div>
+</body>
+</html>

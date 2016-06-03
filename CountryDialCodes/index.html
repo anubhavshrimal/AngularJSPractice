@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <title></title>
+</head>
+<body ng-app="myApp">
+
+<div ng-controller="firstCtrl">
+    Select Country: <select type="text" ng-options="x['name'] for x in dialList" ng-model="name">
+    </select>
+    <p>
+    Country dial_Code: {{name.dial_code}}<br>
+    Country Code: {{name.code}}
+    </p>
+</div>
+
+</body>
+</html>

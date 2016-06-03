@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <style>
+        div{
+            border: 3px solid black;
+        }
+    </style>
+    <title></title>
+</head>
+<body ng-app="myApp">
+{{color}}
+<div ng-controller="firstCtrl">
+    <input type="text" ng-model="color">
+    <p>{{color}}</p>
+    <button ng-click="send()">Send</button>
+</div>
+
+<br>
+<input type="text" ng-model="color">
+<br>
+color: {{color}}
+<br>
+
+<div ng-controller="secondCtrl">
+    <input type="text" ng-model="color">
+    <p>{{color}}</p>
+</div>
+
+</body>
+</html>

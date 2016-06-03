@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../angular.js"></script>
+    <script src="app.js"></script>
+    <title></title>
+</head>
+<body ng-app="myApp">
+
+<div ng-controller="fisrtCtrl">
+
+    User Name: <input type="text" ng-model="user.name"><br>
+    User phone: <input type="text" ng-model="user.phone"><br>
+    Organization Name: <input type="text" ng-model="org.name"><br>
+    <button ng-click="send()">Get Request</button>
+    <button ng-click="sendPost()">Post Request</button>
+    <button ng-click="senderror()">Forbidden Request</button>
+    <button ng-click="getPosts()">Show Posts</button>
+    <br>
+    <div ng-repeat="x in posts">
+        {{$index+1}}.<img style="width:30px" ng-src="{{x.thumbnailUrl}}">
+        {{x.title}}<br>
+        <img style="width:100px" ng-src="{{x.url}}">
+    </div>
+</div>
+
+</body>
+</html>

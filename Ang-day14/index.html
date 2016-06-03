@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../bootstrap.css"/>
+    <script src="../angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="myApp">
+
+<div ng-controller="firstCtrl">
+    <input type="text" ng-model="status" ng-paste="text='paste'">
+    <input type="text" ng-readonly="status" ng-copy="text='abc'">
+    <button ng-disabled="status">Click me</button>
+    {{text}}
+    <br>
+    <select ng-options="n['name'] group by n.con disable when n.con=='Asia' for n in nations" ng-model="selected"></select>
+    {{selected.greet}}
+
+    <div>
+        <input type="text" ng-model="personCount">
+    </div>
+
+    <ng-pluralize count="personCount"
+                  when="{'0': 'Nobody is viewing.',
+                  '1': '1 person is viewing.',
+                  'other': '{} are viewing.'}">
+    </ng-pluralize>
+
+    <div ng-switch="text">
+        <p ng-switch-when="abc">Copied</p>
+        <p ng-switch-when="paste">Pasted</p>
+        <p ng-switch-default>Default</p>
+    </div>
+
+    <input placeholder="a, b , i" ng-model="select">
+    <select>
+        <option>---Nothing---</option>
+        <option ng-selected="select=='i'">Idea</option>
+        <option ng-selected="select=='b'">BSNL</option>
+        <option ng-selected="select=='a'">Airtel</option>
+    </select>
+</div>
+
+</body>
+</html>

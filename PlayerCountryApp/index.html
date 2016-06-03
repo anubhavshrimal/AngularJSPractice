@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <title>Player Country App</title>
+</head>
+<body ng-app="playerCountry">
+<div ng-controller="fisrtCtrl">
+    <select ng-model="playerList" ng-options="x.name for x in names">
+    </select>
+    <br>
+    <img style="width: 150px" ng-src="{{playerList.flag}}" alt="flag image here">
+</div>
+
+</body>
+</html>

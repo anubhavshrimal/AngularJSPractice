@@ -1,0 +1,46 @@
+<div>
+    <h2 ng-show="!list" class="site__title mega animated fadeInDown" style="text-align: center">There are no users!</h2>
+    <div ng-show="list" class=" animated bounceIn">
+        <h2 style="text-align: center" class="site__title mega">List of Users</h2>
+        <div class="col-sm-offset-1 col-sm-10">
+            <table class="table table-hover">
+                <tr>
+                    <th>UserID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>Update</th>
+                </tr>
+                <tr ng-repeat="x in users | filter:search ">
+                    <td ng-repeat="v in x">{{v}}</td>
+                    <td><button ng-click="redirect(x.id)" class="btn btn-danger">Update</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div style="text-align: center" class="col-sm-12">
+        <button ng-click = "filter=!filter; search={}"  ng-init="filter=false" class="btn btn-info">Filter</button>
+    </div>
+    <div ng-show="filter">
+        <div class="row col-sm-offset-4 col-sm-8">
+            <div class="col-sm-6">
+              <span>
+                <input type="checkbox" ng-model="id" ng-checked="id" ng-init="id=false"> ID
+                <input type="checkbox" ng-model="name" ng-checked="name" ng-init="name=false"> Name
+                <input type="checkbox" ng-model="age" ng-checked="age" ng-init="age=false"> Age
+                <input type="checkbox" ng-model="phone" ng-checked="phone" ng-init="phone=false"> Mobile
+                <input type="checkbox" ng-model="email" ng-checked="email" ng-init="email=false"> Email
+              </span>
+                <input type="text" ng-model="search.id" ng-show="id" placeholder="ID" class="form-control">
+                <input type="text" ng-model="search.name" ng-show="name" placeholder="Name" class="form-control">
+                <input type="text" ng-model="search.age" ng-show="age" placeholder="Age" class="form-control">
+                <input type="text" ng-model="search.phone" ng-show="phone" placeholder="Mobile" class="form-control">
+                <input type="text" ng-model="search.email" ng-show="email" placeholder="Email" class="form-control">
+            </div>
+         </div>
+    </div>
+    <div style="text-align: center" class="col-sm-12">
+        <a href="#/add" class="btn btn-info btn-lg">Add new user</a>
+    </div>
+</div>

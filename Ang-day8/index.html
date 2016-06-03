@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <title></title>
+</head>
+<body ng-app="myApp">
+
+<div ng-controller="firstCtrl">
+    <p>This is {{text}}</p>
+
+    <button ng-repeat="n in nations" class="btn btn-danger" ng-click="changeText(n.name)">{{$index+1}}.{{n.name}}</button>
+
+    <div>
+        Country: <input type="text" ng-model="country.name">
+        <br>
+        Greeting: <input type="text" ng-model="country.greet">
+        <br>
+        <button class="btn btn-success" ng-click="update()">Update</button>
+    </div>
+</div>
+
+</body>
+</html>

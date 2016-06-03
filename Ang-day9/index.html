@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <title></title>
+</head>
+<body ng-app="myApp">
+
+<div class="jumbotron" ng-controller="firstCtrl">
+    Name:   <input type="text" ng-model="user1.name">
+    Mobile: <input type="number" ng-model="user1.mobile">
+    Address:<textarea type="text" ng-model="user1.address"></textarea>
+</div>
+
+<div class="jumbotron" ng-controller="secondCtrl">
+    <p ng-repeat="(k,v) in user2">{{k | uppercase}}: {{v}}</p>
+</div>
+
+</body>
+</html>

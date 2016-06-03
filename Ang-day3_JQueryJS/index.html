@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-2.2.3.js"></script>
+    <style>
+        #div1{
+            background: red;
+            color: white;
+        }
+        #div2{
+            background: blue;
+            color: white;
+        }
+        #div3{
+            background: orange;
+            color: white;
+        }
+
+        #img{
+            width: 400px;
+        }
+
+    </style>
+</head>
+<body onmousemove="moveImage(event)">
+
+<button onclick="set()">Click me to change color using native JS</button>
+<div id="div1" >DIV 1</div>
+<br>
+
+Using jQuery
+<br>
+<input id="input1" onkeyup="keyPressed()">
+<br>
+<div>Your Text Here :</div> <div id="text1"></div>
+
+<br>
+<button onclick="hide()">Click me to hide using jQuery</button>
+<div id="div2" >DIV 2</div>
+
+<br>
+<button id="btn" onclick="move()">Click me to animate using jQuery</button>
+<div id="div3" >DIV 2</div>
+
+<br>
+<button>Click me to change image using jQuery</button>
+<img id="img" src="0e4c9ad20e082b5517215c2269f4b5f6a7a59596ea0873743850d1f8d5537d4b.jpg">
+<!--adding app.js script-->
+<script src="app.js"></script>
+</body>
+</html>

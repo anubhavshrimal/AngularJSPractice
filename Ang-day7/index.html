@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <title></title>
+</head>
+<body ng-app="myApp">
+
+<div ng-controller="secondCtrl">
+    <input type="text" ng-model="color">
+    <p ng-show="color=='red' || status">Color: {{color}}</p>
+    <button ng-click="status=true">Show</button>
+    <img  style="width:100px" ng-src="{{color}}.jpg" ng-if="color=='window'">
+</div>
+
+</body>
+</html>

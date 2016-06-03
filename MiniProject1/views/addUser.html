@@ -1,0 +1,42 @@
+<div class="col-sm-offset-3 col-sm-6 animated bounceInRight">
+    <h1 style="text-align: center" class="col-sm-12 site__title mega">Enter User Details</h1>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">User ID:</label>
+            <div class="col-sm-10">
+                <input class="form-control" type="text" ng-model="user.id" disabled>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Name:</label>
+            <div class="col-sm-10">
+                <input class="form-control" placeholder="Name" type="text" ng-model="user.name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Age:</label>
+            <div class="col-sm-10">
+                <input class="form-control" placeholder="Age" type="number" ng-model="user.age">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Phone:</label>
+            <div class="col-sm-10">
+                <input class="form-control" placeholder="Mobile Number" type="number" ng-model="user.phone">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Email:</label>
+            <div class="col-sm-10">
+                <input class="form-control" placeholder="Email" type="text" ng-model="user.email">
+            </div>
+        </div>
+        <div class="col-sm-12" ng-show="!added">
+            <h4 style="text-align: center" class="site__title">All fields are mandatory.</h4>
+        </div>
+        <div class="col-sm-offset-5">
+            <button ng-click="redirect()" class="btn btn-success btn-lg">Add User</button>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,11 @@
+<div>
+    <!--# is optional in server but to work in webstorm we have to use #-->
+    Main Page<br>
+    INBOX
+    Brand:<input type="text" ng-model="brand"><br>
+    Category:<input type="text" ng-model="category">
+    <br>
+    <a href="#/products/{{brand}}/{{category}}">Show Products</a>
+    <br>
+    <button ng-click="redirect()">Sent</button>
+</div>

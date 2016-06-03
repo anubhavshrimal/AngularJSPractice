@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-2.2.3.js"></script>
+    <title></title>
+</head>
+<body>
+
+<form method="post" action="submit.html">
+    First Name <input type="text" id="first" name="firstname">
+    Address <textarea rows="2" cols="10" type="text" name="address" name="address"></textarea>
+    Password <input type="password" name="password">
+    <br>
+    <input type="checkbox" name="games[]" value="c">Cricket
+    <input type="checkbox" name="games[]" value="f">Football
+    <input type="checkbox" name="games[]" value="h">Hockey
+    <br>
+    <select name="hobby">
+        <option value="anu">Anubhav</option>
+        <option value="adi">Aditya</option>
+        <option value="rit">Ritika</option>
+    </select>
+    <br>
+    <input type="file" name="file">
+    <input type="submit" name="submit">
+</form>
+
+
+<script>
+    $("#first").val("abc");
+</script>
+
+</body>
+</html>
