@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="myApp">
+
+    <div ng-controller="firstCtrl">
+        <input type="text" ng-model="user.name" placeholder="enter your name"><br>
+        <input type="text" ng-model="user.age" placeholder="enter your age"><br>
+        <input type="text" ng-model="user.gender" placeholder="gender"><br>
+        <button ng-click="sendData()">Send</button>
+        <button ng-click="getData()">Get</button>
+        <button ng-click="removeData()">Remove</button>
+        <p>{{value.name}}</p>
+        <p>{{value.age}}</p>
+        <p>{{value.gender}}</p>
+    </div>
+
+</body>
+</html>
