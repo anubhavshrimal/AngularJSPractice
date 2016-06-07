@@ -12,4 +12,4 @@
 12. ng-copy, ng-cut, ng-paste, ng-disabled, ng-readonly, ng-options
      ng-cloak, ng-pluralize, ng-switch, ng-dblclick, ng-selected        Ang-day14
 13. Event Listner and Broadcaster                                       Ang-day15
-14. Local Storage, Firebase                                             Ang-day16
+14. Local Storage, Firebase, localForage                                Ang-day16
