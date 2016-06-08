@@ -1,9 +1,12 @@
-S.NO RESOURCE                           USE
+S.NO    RESOURCE                           USE
 
-01. angular.js
-02. angular-route.js                JS for routing in angular
-03. animate.css                     Animation CSS library
-04. bootstrap.css                   Size Responsive CSS library
-05. jquery- 2.2.3.js                jQuery JS
-06. localforage.js                  JS for Storage methods in browser   (better than local storage)
-    06.a angular-localForage.js         Angular plugin for localForage
+01.     angular.js
+02.     angular-route.js                JS for routing in angular
+03.     animate.css                     Animation CSS library
+04.     bootstrap.css                   Size Responsive CSS library
+05.     jquery- 2.2.3.js                jQuery JS
+06.     localforage.js                  JS for Storage methods in browser   (better than local storage)
+06.a    angular-localForage.js          Angular plugin for localForage
+07.     firebase.js
+07.a    angularfire.min.js
+08.     underscore-min.js
