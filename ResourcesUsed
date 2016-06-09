@@ -10,3 +10,14 @@ S.NO    RESOURCE                           USE
 07.     firebase.js
 07.a    angularfire.min.js
 08.     underscore-min.js
+
+
+Online Resources
+01.http://ngmodules.org/
+    angular ui
+    bootstrap
+    ng-file-upload
+    angular-loading-bar
+    ngAnimate
+02. angular-svg-round-progressbar
+03. Select-To in dropdown which gives tags
