@@ -20,3 +20,4 @@ S.NO        TOPICS                                                         PROJE
 13.      Event Listner and Broadcaster                                      Ang-day15
 14.      Local Storage, localForage                                         Ang-day16
 15.      Firebase, underscore-min.js                                        Ang-day17
+16.      Modules, value and constant Services,strict DI for minified files  Ang-day18
