@@ -21,3 +21,4 @@ S.NO        TOPICS                                                         PROJE
 14.      Local Storage, localForage                                         Ang-day16
 15.      Firebase, underscore-min.js                                        Ang-day17
 16.      Modules, value and constant Services,strict DI for minified files  Ang-day18
+17.      $watch listnner, api calling, $q service to sync api req           Ang-day19
