@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="myApp">
+
+<div ng-controller="firstCtrl">
+    <input type="text" ng-model="image">
+    <img width="40px" data-ng-attr-src="{{image}}">
+    <!--<my-dir></my-dir>-->
+
+    <input type="text" placeholder="color of border" ng-model="color">
+    <div my-dir border-color="{{color}}">
+        hello {{name}}
+    </div>
+
+    <svg>
+        <circle r="50" cx="200" cy="100" fill="red"></circle>
+    </svg>
+</div>
+</body>
+</html>

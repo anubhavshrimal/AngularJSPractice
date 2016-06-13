@@ -10,7 +10,7 @@ S.NO    RESOURCE                           USE
 07.     firebase.js
 07.a    angularfire.min.js
 08.     underscore-min.js
-
+09.     jQLite                          Some jQuery functions are pre-build in angular
 
 Online Resources
 01.http://ngmodules.org/
