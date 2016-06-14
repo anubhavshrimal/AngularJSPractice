@@ -24,3 +24,4 @@ S.NO        TOPICS                                                         PROJE
 17.      $watch listnner, api calling, $q service to sync api req           Ang-day19
 18.      ng-attr-, custom directives                                        Ang-day20
 19.      templateUrl, isolated scope (directives binding)                   Ang-day21
+19.      Logging in using google login                                     Google-Login
