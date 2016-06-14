@@ -7,10 +7,11 @@ app.controller("firstCtrl", function ($scope, $firebaseArray, $firebaseAuth) {
     // create an instance of the authentication service
     var auth = $firebaseAuth(ref);
     // login with Facebook
-    auth.$authWithOAuthPopup("google").then(function(authData) {
-        console.log("Logged in as:", authData.uid);
+    auth.$authWithOAuthPopup("google", {"scope": "email"}).then(function(authData) {
+        console.log("Logged in as:", authData);
         $scope.url = authData.google.profileImageURL;
         $scope.name = authData.google.displayName;
+        $scope.email = authData.google.email;
     }).catch(function(error) {
         console.log("Authentication failed:", error);
     });
