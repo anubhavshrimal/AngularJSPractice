@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="myApp">
+
+<div ng-controller="firstCtrl">
+
+<!--    <random></random>
+    <call talk="speak(name, city)"></call>-->
+
+    <country>
+        <state>
+            <city></city>
+        </state>
+    </country>
+
+    <!--<country state city>
+
+    </country>-->
+</div>
+
+<div ng-controller = "secondCtrl as s">
+    <p>{{s.name}}</p>
+    <p>{{s.age}}</p>
+</div>
+
+</body>
+</html>

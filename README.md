@@ -16,8 +16,8 @@ Practice of AngularJS concepts and making Projects on AngularJS
 |09. |     app.config, routing                                              |    Ang-day11       |
 |10. |     redirection $location, Variable Routing $routeParams             |    Ang-day12       |
 |11. |     filters refer to page 3 in notes                                 |    Ang-day13       |
-|12. |     ng-copy, ng-cut, ng-paste, ng-disabled, ng-readonly, ng-options
-           ng-cloak, ng-pluralize, ng-switch, ng-dblclick, ng-selected      |  Ang-day14         |
+|12. |     ng-copy, ng-cut, ng-paste, ng-disabled, ng-readonly, ng-options  |                    |
+|    |     ng-cloak, ng-pluralize, ng-switch, ng-dblclick, ng-selected      |  Ang-day14         |
 |13. |     Event Listner and Broadcaster                                    |  Ang-day15         |
 |14. |     Local Storage, localForage                                       |  Ang-day16         |
 |15. |     Firebase, underscore-min.js                                      |  Ang-day17         |
@@ -26,5 +26,5 @@ Practice of AngularJS concepts and making Projects on AngularJS
 |18. |     ng-attr-, custom directives                                      |  Ang-day20         |
 |19. |     templateUrl, isolated scope (directives binding)                 |  Ang-day21         |
 |20. |     Google login, Facebook login                                     |  Google-FB-Login   |
-|21. |     function binding in directives, directive hierarchy, controller
-           calling syntax                                                   |  Ang-day22         |
+|21. |     function binding in directives, directive hierarchy, controller  |                    |
+|    |     calling syntax                                                   |  Ang-day22         |
