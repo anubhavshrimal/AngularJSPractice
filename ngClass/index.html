@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../bootstrap.css" rel="stylesheet">
+    <script src="../angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="myApp">
+
+<div ng-controller="firstCtrl as f">
+    <input type="text" ng-model="f.name">
+    <div ng-style="f.style">{{f.name}}</div>
+
+    <button class="btn btn-default" ng-class="{'btn-danger': f.status=='a', 'btn-xs': f.status!='a'}" ng-click="f.status = 'a' ">Click Me A!</button>
+    <button class="btn btn-default" ng-class="{'btn-danger': f.status=='b', 'btn-xs': f.status!='b'}" ng-click="f.status = 'b' ">Click Me B!</button>
+    <button class="btn btn-default" ng-class="{'btn-danger': f.status=='c', 'btn-xs': f.status!='c'}" ng-click="f.status = 'c' ">Click Me C!</button>
+</div>
+
+</body>
+</html>
