@@ -51,10 +51,6 @@ app.directive("country", function () {
         "link": function (scope, elem, attrs) {
             console.log("country");
 
-        },
-        "controller": function () {
-
-            this.label = "IN";
         }
     }
 });
@@ -67,10 +63,6 @@ app.directive("state", function () {
         "link": function (scope, elem, attrs) {
             console.log("state");
 
-        },
-        "controller": function () {
-
-
         }
     }
 });
@@ -82,10 +74,6 @@ app.directive("city", function () {
         "priority":5,
         "link": function (scope, elem, attrs) {
             console.log("city");
-
-        },
-        "controller": function () {
-
 
         }
     }
