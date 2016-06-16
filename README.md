@@ -27,4 +27,6 @@ Practice of AngularJS concepts and making Projects on AngularJS
 |19. |     templateUrl, isolated scope (directives binding)                 |  Ang-day21         |
 |20. |     Google login, Facebook login                                     |  Google-FB-Login   |
 |21. |     function binding in directives, directive hierarchy, controller  |                    |
-|    |     calling syntax                                                   |  Ang-day22         |
+|    |     calling syntax, priority in directives                           |  Ang-day22         |
+|22. |     directive to directive communication using controller, transclude|  Ang-day23         |
+|23. |     changing styles dynamically using ng-class, ng-style             |  ngClass           |
