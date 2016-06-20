@@ -30,3 +30,4 @@ Practice of AngularJS concepts and making Projects on AngularJS
 |    |     calling syntax, priority in directives                           |  Ang-day22         |
 |22. |     directive to directive communication using controller, transclude|  Ang-day23         |
 |23. |     changing styles dynamically using ng-class, ng-style             |  ngClass           |
+|23. |     Angular Material Design demo                                     |  AngularMaterial   |
