@@ -2,28 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Form Validation</title>
     <script src="../angular.js"></script>
     <script src="app.js"></script>
 </head>
 <body ng-app="myApp">
 
-<div ng-controller="firstCtrl">
-
-    <country>
-        <state>
-            <city>
-
-            </city>
-        </state>
-    </country>
-
-    <popover>Hello world</popover>
-
-    <popover>
-        <h1>This is AngularJS</h1>
-    </popover>
-</div>
+<form name="form1" ng-submit="form1.$invalid || submit()" ng-controller="formCtrl" novalidate>
+    <input type="text" name="username" placeholder="User Name" ng-model="user.name" required>
+    <input type="password" name="password" placeholder="Password" ng-model="user.pass" minlength="4">
+    <input type="email" name="email" ng-model="user.email" required>
+    <p ng-if="form1.$submitted && form1.email.$error.required" style="color: red">Email is required</p>
+    <p ng-if="form1.$submitted && form1.email.$error.email" style="color: red">Email is not proper in syntax</p>
+    <input type="submit">
+</form>
 
 </body>
 </html>
