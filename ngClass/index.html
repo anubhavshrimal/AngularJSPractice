@@ -16,6 +16,10 @@
     <button class="btn btn-default" ng-class="{'btn-danger': f.status=='a', 'btn-xs': f.status!='a'}" ng-click="f.status = 'a' ">Click Me A!</button>
     <button class="btn btn-default" ng-class="{'btn-danger': f.status=='b', 'btn-xs': f.status!='b'}" ng-click="f.status = 'b' ">Click Me B!</button>
     <button class="btn btn-default" ng-class="{'btn-danger': f.status=='c', 'btn-xs': f.status!='c'}" ng-click="f.status = 'c' ">Click Me C!</button>
+
+    <!--other formats of ng-class:
+    ng-class="[style1, style2, style3]"
+    ng-class="[style1, {style2: status value}]"-->
 </div>
 
 </body>
