@@ -9,7 +9,12 @@ app.config(function ($routeProvider) {
         .when("/",      /*root or main page*/
             {
                 "templateUrl": "views/inbox.html",
-                "controller": "inboxCtrl"
+                "controller": "inboxCtrl",
+                "resolve": {
+                    "condition": function () {
+                        console.log("resolve will run before the router loads");
+                    }
+                }
                 // READ ABOUT RESOLVE ASYNC FUNCTION
             }
         ).when("/sent",
