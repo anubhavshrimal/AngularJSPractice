@@ -10,6 +10,7 @@ app.config(function ($routeProvider) {
             {
                 "templateUrl": "views/inbox.html",
                 "controller": "inboxCtrl"
+                // READ ABOUT RESOLVE ASYNC FUNCTION
             }
         ).when("/sent",
             {
