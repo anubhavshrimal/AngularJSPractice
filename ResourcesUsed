@@ -34,3 +34,4 @@ jsoneditoronline.org    - website to show json in a nice readable format
 materialize.css         - css for material designing
 Angular-Material
 nganimate js            for animations in transistion of ng-repeat ng-if etc.
+angular-filter		predefined custom filters for easy use https://github.com/a8m/angular-filter
