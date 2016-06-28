@@ -32,3 +32,4 @@ Practice of AngularJS concepts and making Projects on AngularJS
 |23. |     changing styles dynamically using ng-class, ng-style             |  ngClass           |
 |24. |     Angular Material Design demo                                     |  AngularMaterial   |
 |24. |     Form validation                                                  |  Ang-day25         |
+|25. |     angular-animate.js                                               |  Ang-day28         |

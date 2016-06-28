@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ng-Switch</title>
+    <script src="angular.js"></script>
+    <script src="angular-animate.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+        .custom{
+            background-color:black;
+            color:white;
+            padding:10px;
+            border:1px solid white;
+        }
+        .custom.ng-enter{
+              transition:1s linear all;
+              background-color:red;
+               opacity:0;
+        }
+
+        .custom.ng-enter-active{
+            opacity:1;
+            background-color:black;
+        }
+
+        .highlight {
+            transition:0.5s linear all;
+            background:orange;
+        }
+        .highlight.on-add {
+            color:white;
+        }
+        .highlight.on {
+            background:yellow;
+        }
+        .highlight.on-remove {
+            background:blue;
+        }
+
+
+    </style>
+
+
+</head>
+<body ng-app="test">
+
+<div ng-controller="testCtrl">
+    <input type="text" ng-model="name">
+    <button ng-click="add()">Add</button>
+
+
+    <div ng-repeat="n in names track by $index" ng-init="call($index,n)" class="custom">
+        {{n}}
+    </div>
+
+
+    <div ng-class="{on:onOff}" class="highlight">
+        Highlight this box
+    </div>
+
+    <button ng-click="onOff=!onOff">Toggle</button>
+
+
+
+
+
+</div>
+
+
+</body>
+</html>
