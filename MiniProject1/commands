@@ -1,0 +1,6 @@
+firebase login
+firebase init
+firebase deploy
+
+after making any changes just do:-
+    firebase deploy to make changes
