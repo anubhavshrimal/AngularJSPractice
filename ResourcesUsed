@@ -27,6 +27,7 @@ Online Resources
 07. mashApe - Collection of api's
 08. https://github.com/toddmotto/public-apis        - some public apis
 09. ui-router        - for routing like in an application i.e . state routing
+10. httpInterceptors    - to redirect in the app before loading the controller
 
 
 

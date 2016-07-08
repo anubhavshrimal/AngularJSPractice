@@ -33,3 +33,6 @@ Practice of AngularJS concepts and making Projects on AngularJS
 |24. |     Angular Material Design demo                                     |  AngularMaterial   |
 |24. |     Form validation                                                  |  Ang-day25         |
 |25. |     angular-animate.js                                               |  Ang-day28         |
+|26. |     hosting an app, user data insertion, deletion, updation          |  MiniProject       |
+|27. |     Chat App template                                                |  Ang-day31         |
+|28. |     Draggable directive                                              |  Ang-day32         |
