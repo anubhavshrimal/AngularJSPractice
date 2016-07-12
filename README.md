@@ -22,6 +22,7 @@ Practice of AngularJS concepts and making Projects on AngularJS
 |14. |     Local Storage, localForage                                       |  Ang-day16         |
 |15. |     Firebase, underscore-min.js                                      |  Ang-day17         |
 |16. |     Modules, value and constant Services,strict DI for minified files|  Ang-day18         |
+|    |     Service Provider                                                 |                    |
 |17. |     $watch listnner, api calling, $q service to sync api req         |  Ang-day19         |
 |18. |     ng-attr-, custom directives                                      |  Ang-day20         |
 |19. |     templateUrl, isolated scope (directives binding)                 |  Ang-day21         |
