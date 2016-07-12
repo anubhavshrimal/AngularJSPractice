@@ -7,8 +7,8 @@
 var app1 = angular.module("myApp",["test"]);
 
 // strict dependencies injection for minified version
-app1.controller("firstCtrl", ["$scope", "dataService", "PI", function ($scope, dataService, PI) {
-    $scope.name = "abc";
+app1.controller("firstCtrl", ["$scope", "dataService", "PI", "nation", function ($scope, dataService, PI, nation) {
+    $scope.name = nation;
     $scope.country = dataService.data[0];
     $scope.pi = PI;
 }]);
