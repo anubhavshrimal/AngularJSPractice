@@ -37,3 +37,4 @@ Practice of AngularJS concepts and making Projects on AngularJS
 |26. |     hosting an app, user data insertion, deletion, updation          |  MiniProject       |
 |27. |     Chat App template                                                |  Ang-day31         |
 |28. |     Draggable directive                                              |  Ang-day32         |
+|28. |     tic tac toe game using directives                                | TicTacToe-Directive|
